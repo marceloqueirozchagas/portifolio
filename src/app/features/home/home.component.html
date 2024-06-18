@@ -1,0 +1,48 @@
+<section class="home_banner_area" id='home'>
+    <div class="container box_1620">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="banner_content">
+                <div class="media">
+                    <div class="d-flex">
+                        <img [src]="personal.profileImgUrl" alt="" />
+                    </div>
+                    <div class="media-body">
+                        <div class="personal_text">
+                            <h6>{{ personal.greeting }}</h6>
+                            <h3>{{ personal.fullName }}</h3>
+                            <h4>{{ personal.occupation }}</h4>
+                            <p>
+                                {{ personal.description }}
+                            </p>
+                            <ul class="list basic_info">
+                                <li>
+                                    <a [href]="whatsappUrl" target="_blank">
+                                        <i class="lnr lnr-phone-handset"></i>
+                                        {{ personal.phoneNumber }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:{{ personal.email }}">
+                                        <i class="lnr lnr-envelope"></i> 
+                                        {{ personal.email }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [href]="locationMapUrl" target="_blank">
+                                        <i class="lnr lnr-home"></i> 
+                                        {{ personal.location }}
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list personal_social">
+                                <li *ngFor="let social of listSocial">
+                                    <a [href]="social.url" target="_blank"><i [class]="social.icon"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
