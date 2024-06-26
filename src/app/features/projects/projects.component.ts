@@ -40,7 +40,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.githubApi.getGithubRepos().subscribe((response: any) => {
-      this.gitHubProjects = response;
+      this.gitHubProjects = response.filter((x:any) => x.name != 'marceloqueirozchagas');
     });
   }
 }

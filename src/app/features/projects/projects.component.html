@@ -23,13 +23,13 @@
             <table class="table">
                 <tbody>
                     <tr *ngFor="let item of gitHubProjects">
-                        <td>{{item.name}}</td>
-                        <td>{{item.language}}</td>
+                        <td>{{item.name.toLocaleLowerCase()}}</td>
+                        <td>{{item.language.toLocaleLowerCase()}}</td>
                         <td>
-                            <a [href]="item.clone_url" target="_blank">Clone</a>
+                            <a [href]="item.clone_url" target="_blank">clone</a>
                         </td>
                         <td>
-                            <a [href]="item.homepage" target="_blank" *ngIf="item.homepage">Home Page</a>
+                            <a [href]="item.homepage" target="_blank" *ngIf="item.homepage">ver</a>
                         </td>
                     </tr>
                 </tbody>
