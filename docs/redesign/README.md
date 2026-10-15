@@ -2,7 +2,7 @@
 
 Rebuild the personal website in the existing repository using the approved layout, concise bilingual copy, and current stable Angular. Preserve marceloqueiroz.dev.br and the existing GitHub Pages integration.
 
-Planning date: October 15, 2026. The visual direction and implementation plan are approved. The implementation is available locally for bilingual preview review; production publication remains pending explicit approval.
+Planning date: October 15, 2026. The visual direction and implementation plan are approved. The implementation was approved, published and verified on October 15, 2026. See [release evidence](release-2026-10-15.md).
 
 ## Documents
 

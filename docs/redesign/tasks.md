@@ -1,12 +1,12 @@
 # Portfolio Redesign Features and Tasks
 
-Implementation tasks T01–T10 are complete for local preview review, with the limitations recorded below. T11 remains pending user authorization to publish. The visual direction and implementation plan are approved. Follow the English documentation, naming, and code conventions in the [plan](README.md).
+Tasks T01–T11 are complete, with the validation limits recorded below. The user approved the preview and publication on October 15, 2026; the deployed release is verified. The visual direction and implementation plan are approved. Follow the English documentation, naming, and code conventions in the [plan](README.md).
 
 ## F01 Angular Foundation and Deployment Compatibility
 
 ### T01 Record the deployment contract
 
-Dependencies: none. Status: complete for preview.
+Dependencies: none. Status: complete.
 
 Inspect Pages settings or an authenticated API to identify publishing source, directory, trigger, actual command, and external integrations. Compare with [deployment evidence](deployment.md).
 
@@ -21,7 +21,7 @@ Evidence: configuration report and documented build/publishing commands.
 
 ### T02 Prepare the current Angular baseline
 
-Dependencies: T01. Status: complete for preview.
+Dependencies: T01. Status: complete.
 
 Generate a clean baseline in a temporary work directory and incorporate necessary files into the existing repository. Preserve Git history, documentation, verified content, and reusable assets.
 
@@ -39,7 +39,7 @@ Evidence: version inventory, build output, and artifact inspection.
 
 ### T03 Build the responsive composition
 
-Dependencies: T02. Status: complete for preview.
+Dependencies: T02. Status: complete.
 
 Apply approved colors, typography, and proportions. Build identity, navigation, professional links, and sections. Reserve top space for language selection.
 
@@ -55,7 +55,7 @@ Evidence: desktop/mobile screenshots compared with the approved mockup.
 
 ### T04 Implement navigation and experience expansion
 
-Dependencies: T03. Status: complete for preview.
+Dependencies: T03. Status: complete.
 
 Preserve section anchors, track the active section while scrolling, and implement semantic expansion of earlier experience.
 
@@ -73,7 +73,7 @@ Evidence: keyboard review and automated navigation/expansion checks.
 
 ### T05 Centralize and review localized content
 
-Dependencies: T02. Status: complete for preview.
+Dependencies: T02. Status: complete.
 
 Create typed shared data and locale dictionaries with English keys. Apply the [content specification](design-content.md) and verify factual claims.
 
@@ -89,7 +89,7 @@ Evidence: bilingual review, translation-key validation, and pending factual ques
 
 ### T06 Add the language selector and localized pages
 
-Dependencies: T03, T04, T05. Status: complete for preview.
+Dependencies: T03, T04, T05. Status: complete.
 
 Add Português / English links near the top. Render Portuguese at / and English at /en/ with shared components and route-selected content.
 
@@ -106,7 +106,7 @@ Evidence: generated HTML and browser tests for direct entry, refresh, switching,
 
 ### T07 Finalize project cards and contact
 
-Dependencies: T03, T05. Status: complete for preview.
+Dependencies: T03, T05. Status: complete.
 
 Show Calculadora PGTA, Invoice Generator, and Magma Engenharia in approved order. Use approved graphical covers or optimized real screenshots. Implement professional and email links.
 
@@ -124,7 +124,7 @@ Evidence: visual review in both languages and destination checks.
 
 ### T08 Prepare localized SEO and sharing metadata
 
-Dependencies: T06, T07. Status: complete for preview.
+Dependencies: T06, T07. Status: complete.
 
 Configure document language, localized titles/descriptions, canonical URLs, Open Graph, favicon, social images, robots.txt, and sitemap.xml. Add reciprocal language alternates and x-default pointing to the Portuguese root.
 
@@ -140,7 +140,7 @@ Evidence: inspection of both generated documents and discovery files.
 
 ### T09 Validate behavior, accessibility, and performance
 
-Dependencies: T04, T06, T07, T08. Status: complete for preview.
+Dependencies: T04, T06, T07, T08. Status: complete.
 
 Test the production build on a static server, including navigation, languages, expansion, content, accessibility, and responsiveness.
 
@@ -158,7 +158,7 @@ Evidence: test reports, accessibility review, Lighthouse results, and final scre
 
 ### T10 Prepare delivery and recovery
 
-Dependencies: T01, T09. Status: complete for preview.
+Dependencies: T01, T09. Status: complete.
 
 Update the README in English with setup, localized content editing, tests, build, and deployment. Adapt the existing publisher minimally if required by the new output.
 
@@ -175,7 +175,7 @@ Evidence: artifact inspection and reproducible instructions.
 
 ### T11 Publish and verify the domain
 
-Dependencies: T10 and authorization to publish the completed preview. Status: awaiting preview approval; not published.
+Dependencies: T10 and authorization to publish the completed preview. Status: complete; published and verified on October 15, 2026.
 
 Publish the validated artifact through the verified integration. Check both languages on the real domain and use the recovery procedure if needed.
 
@@ -220,3 +220,7 @@ Changed the visible monogram to MQ in the header/footer and SVG favicon, with a 
 
 Validation: production build passed; both localized entry/accessibility checks and the future-date calculation check passed (3 selected browser tests). The refreshed Portuguese preview shows MQ, the calculated highlight and the active corrected PGTA link. No publishing command was run.
 
+
+### October 15, 2026 — T11 production publication completed
+
+After explicit user approval, saved the source branch on GitHub and published the approved artifact through the existing gh-pages integration. Pages build `6017c120c6f1f0cadd5b748d9350865497eb36f8` completed successfully at 17:04:35 America/Cuiaba. Both public language URLs and all 18 checked artifact files responded successfully over HTTPS. Verified real-domain desktop/mobile rendering, direct English refresh and section-preserving language switching. The domain and previous release were retained. See [release evidence](release-2026-10-15.md) for SHAs, screenshots, checks and recovery details. Earlier execution entries describe the state at their respective stages and are superseded by this release record.

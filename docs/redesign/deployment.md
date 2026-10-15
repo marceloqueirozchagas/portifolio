@@ -1,5 +1,7 @@
 # Portfolio Deployment and Recovery
 
+Current release: [October 15, 2026 — published and verified](release-2026-10-15.md). The observations and preview-stage notes below preserve the pre-release evidence; the release record supersedes statements that publication is pending.
+
 ## Observed state on October 15, 2026
 
 | Item | Evidence |

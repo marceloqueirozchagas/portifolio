@@ -37,7 +37,7 @@ Both languages must keep matching translation keys. Roles and date ranges are lo
 
 ## Publication
 
-**Preview approval is required before publishing this redesign.** Development and builds do not deploy. There is no automatic production workflow on this feature branch.
+The redesign was approved and published on October 15, 2026: [Portuguese](https://marceloqueiroz.dev.br/) and [English](https://marceloqueiroz.dev.br/en/). See the [release record](docs/redesign/release-2026-10-15.md). Future production changes require release authorization. Development and builds do not deploy. There is no automatic production workflow on this feature branch.
 
 The existing GitHub Pages configuration publishes the root of `gh-pages`, with `marceloqueiroz.dev.br` as its custom domain. After approval, validate the build and run `npm run deploy` from the repository. This explicit command replaces the published artifact through `angular-cli-ghpages`; do not run it as part of tests or preview.
 
