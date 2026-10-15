@@ -34,11 +34,11 @@ Reviewed typography, hierarchy, contrast, layout, both language labels and the u
 ## Limits and release follow-up
 
 - The final visual/content approval belongs to Marcelo. No production publishing, remote push or pull request occurred.
-- PGTA returns 404; Magma has no resolvable host in this environment. Their cards are visible without active links, labeled Demo unavailable / Demonstração indisponível. Invoice Generator responds with HTTP 200.
+- The user supplied the correct PGTA destination, https://calculadoraindigena.com.br/, during preview review; its link is now active. Magma has no resolvable host in this environment and remains labeled Demo unavailable / Demonstração indisponível. Invoice Generator responds with HTTP 200.
 - Full npm audit currently flags six related high-severity findings in the development publisher dependency chain. See deployment.md. These packages are not shipped in the static browser bundle.
 - Lighthouse scores are local simulated-mobile measurements, not real-user field data or a guarantee for every device. Preview uses no-store headers and cannot reproduce GitHub Pages caching exactly.
 - Chromium is automated. Safari/Firefox, screen-reader output and browser-specific 200% toolbar zoom were not separately tested; narrow viewport reflow and native keyboard behavior were checked.
-- Without JavaScript, the numeric experience count reflects the last build. The permanent October 2011 start date remains accurate. With JavaScript it updates after hydration, on tab visibility changes, and hourly.
+- Without JavaScript, the numeric experience count reflects the last build. The career timeline retains the October 2011 start date. With JavaScript it updates after hydration, on tab visibility changes, and hourly.
 
 ## Final reproducibility checks
 

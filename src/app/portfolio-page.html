@@ -1,9 +1,7 @@
 <a class="skip-link" [href]="basePath + '#content'">{{ copy.skip }}</a>
 <div class="site-shell" id="home">
   <header class="topbar">
-    <a class="monogram" [href]="basePath + '#home'" aria-label="mq. — Marcelo Queiroz"
-      >mq<span>.</span></a
-    >
+    <a class="monogram" [href]="basePath + '#home'" aria-label="MQ — Marcelo Queiroz">MQ</a>
     <app-language-switcher [locale]="locale" [label]="copy.languageLabel" [hash]="currentHash()" />
   </header>
   <div class="layout">
@@ -50,7 +48,9 @@
           >{{ copy.aboutAfter }}
         </p>
         <p>{{ copy.aboutSecond }}</p>
-        <p class="since">{{ copy.since }}</p>
+        <p class="experience-summary">
+          {{ copy.experienceSummaryBefore }}{{ years() }}{{ copy.experienceSummaryAfter }}
+        </p>
       </section>
       <section id="projects" aria-labelledby="projects-title">
         <h2 class="section-heading" id="projects-title">
@@ -78,7 +78,7 @@
         >
       </section>
       <footer>
-        <span class="footer-mark">mq.</span>
+        <span class="footer-mark">MQ</span>
         <p>{{ copy.footer }}</p>
         <a [href]="basePath + '#home'" [attr.aria-label]="copy.backToTop">↑</a>
       </footer>

@@ -77,7 +77,7 @@ Category pairs: Aplicação web / Web application; Calculadora / Calculator; Pro
 
 Existing destinations:
 
-- PGTA: https://conservation-strategy.github.io/calculadora-terras-indigenas
+- PGTA: https://calculadoraindigena.com.br/
 - Invoice: https://marceloqueirozchagas.github.io/invoice-generator/
 - Magma: https://magmaengenharia.com.br/
 - Other repositories: https://github.com/marceloqueirozchagas?tab=repositories
@@ -116,12 +116,12 @@ Dates come from the previous site. On October 15, 2026, Marcelo confirmed contin
 | accessibility.skipToContent | Pular para o conteúdo | Skip to content |
 | accessibility.languageSelector | Selecionar idioma | Select language |
 
-The mq. mark returns to the localized page's #home. Active section styling follows scrolling. Retain native anchors and visible focus; honor reduced motion.
+The MQ mark returns to the localized page's #home. Active section styling follows scrolling. Retain native anchors and visible focus; honor reduced motion.
 
 On small screens, disable sticky positioning and keep the section links and language selector available without a complex hidden menu. Earlier experience uses a semantic keyboard-accessible control.
 
 ## Implementation content updates — October 15, 2026
 
-The user requested automatic experience calculation from October 2011. Replace the fixed 10-year statement with completed calendar years, increasing in October. Show the permanent start date alongside it. The count is prerendered and refreshed after browser hydration, including visibility changes and hourly refreshes. Without JavaScript the numeric value reflects the build date.
+The user requested automatic experience calculation from October 2011. Replace the fixed 10-year statement with completed calendar years, increasing in October. The highlight uses the same calculated years as the biography; the career timeline retains the start date. The count is prerendered and refreshed after browser hydration, including visibility changes and hourly refreshes. Without JavaScript the numeric value reflects the build date.
 
 Streetwire responsibilities now cover portals, interfaces and APIs for real estate data products; system integration, SQL queries, access control and geographic visualizations; and Python reporting/analysis automation, application maintenance, improvements and delivery. These are a high-level summary of the user's work context (portal/report management, coverage maps, and the technical reports inventory), without internal links, confidential data, unverified leadership claims or performance metrics. The exact bilingual copy lives in `src/app/content/portfolio-content.ts` and remains subject to preview review.

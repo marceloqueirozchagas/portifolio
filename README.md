@@ -31,7 +31,7 @@ Open http://127.0.0.1:4173/ or http://127.0.0.1:4173/en/. Preview serves the exa
 - `src/styles.scss`: layout, typography, tokens, and responsive rules.
 - `public/images`: original decorative project illustrations (not screenshots), plus the social card.
 
-Experience is calculated from **October 2011**, using completed calendar years and the UTC month. No precise start day was supplied. The static build supplies a readable initial value; TransferState preserves hydration consistency, then the browser recalculates on opening, returning to the tab, and hourly. Visitors without JavaScript see the build-time count and the permanent start date.
+Experience is calculated from **October 2011**, using completed calendar years and the UTC month. No precise start day was supplied. The static build supplies a readable initial value; TransferState preserves hydration consistency, then the browser recalculates on opening, returning to the tab, and hourly. Visitors without JavaScript see the build-time count while the career timeline retains the October 2011 start date.
 
 Both languages must keep matching translation keys. Roles and date ranges are localized display content; company names and technology names remain proper nouns. The Streetwire responsibilities summarize work on portals/APIs, integrations, access control, geographic visualizations, SQL, and Python reports. No private report data, internal links, or business metrics are published.
 

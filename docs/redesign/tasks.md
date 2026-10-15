@@ -213,3 +213,10 @@ Added static localized document language, titles, descriptions, canonical, recip
 ### October 15, 2026 — T10–T11
 
 Documented setup, content maintenance, static preview, explicit publishing and recovery in English. The reviewable local feature branch contains the implementation and screenshots. The deploy command preserves the genuine 404, domain and .nojekyll. The previous production archive is ignored, as are generated output and test reports. Known publisher dependency advisories are documented in deployment.md. Production remains unchanged; T11 awaits the user's review and explicit authorization. No PR or remote source branch has been created in this preview stage.
+
+### October 15, 2026 — Preview review, comments 1–3
+
+Changed the visible monogram to MQ in the header/footer and SVG favicon, with a matching accessible name. Replaced the start-date highlight with "Dev com {years} anos de experiência" / "Developer with {years} years of experience", using the existing October 2011 calculation in both locales. Restored the PGTA project link using the user-confirmed https://calculadoraindigena.com.br/ destination; the obsolete URL's 404 does not apply to this corrected destination. Publication remains pending preview approval.
+
+Validation: production build passed; both localized entry/accessibility checks and the future-date calculation check passed (3 selected browser tests). The refreshed Portuguese preview shows MQ, the calculated highlight and the active corrected PGTA link. No publishing command was run.
+

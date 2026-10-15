@@ -24,7 +24,8 @@ export interface PortfolioCopy {
   aboutBefore: string;
   aboutAfter: string;
   aboutSecond: string;
-  since: string;
+  experienceSummaryBefore: string;
+  experienceSummaryAfter: string;
   projects: readonly ProjectCopy[];
   unavailableProject: string;
   moreProjects: string;
@@ -47,8 +48,8 @@ export const profile = {
 export const projects = [
   {
     id: 'pgta',
-    available: false,
-    url: 'https://conservation-strategy.github.io/calculadora-terras-indigenas',
+    available: true,
+    url: 'https://calculadoraindigena.com.br/',
     cover: '/images/pgta.svg',
   },
   {
@@ -113,7 +114,8 @@ export const portfolioContent: Record<Locale, PortfolioCopy> = {
       ' anos de experiência em aplicações web. Trabalho entre frontend, backend e bancos de dados, conectando as partes que fazem um sistema funcionar.',
     aboutSecond:
       'Minha trajetória passa por tecnologia, educação e dados imobiliários. Combino C#, Python, SQL, Angular e React para transformar necessidades em soluções práticas.',
-    since: 'Construindo software desde outubro de 2011.',
+    experienceSummaryBefore: 'Dev com ',
+    experienceSummaryAfter: ' anos de experiência',
     projects: [
       {
         name: 'Calculadora PGTA',
@@ -190,7 +192,8 @@ export const portfolioContent: Record<Locale, PortfolioCopy> = {
       ' years of experience building web applications. I work across frontend, backend, and databases, connecting the parts that make a system work.',
     aboutSecond:
       'My experience spans technology, education, and real estate data. I use C#, Python, SQL, Angular, and React to turn requirements into practical solutions.',
-    since: 'Building software since October 2011.',
+    experienceSummaryBefore: 'Developer with ',
+    experienceSummaryAfter: ' years of experience',
     projects: [
       {
         name: 'Calculadora PGTA',
