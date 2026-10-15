@@ -1,27 +1,44 @@
-# MyResume
+# Marcelo Queiroz — Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+A bilingual personal website built with Angular 22.2.3, standalone components, strict TypeScript, SCSS, and static prerendering. Portuguese lives at `/`; English lives at `/en/`.
 
-## Development server
+## Local development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Use Node 24.15.0 and npm 11.12.1 (see `.nvmrc`).
 
-## Code scaffolding
+```sh
+npm ci
+npm start
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Build and review
 
-## Build
+```sh
+npm test
+npm run build
+npm run test:e2e
+npm run preview
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Open http://127.0.0.1:4173/ or http://127.0.0.1:4173/en/. Preview serves the exact production artifact with real directory routes and 404 responses, without an SPA fallback. Browser tests use installed Google Chrome. Install Chrome if it is unavailable, or adapt the Playwright channel to your installed browser.
 
-## Running unit tests
+`dist/portifolio/browser` is the only publishable directory. No Node server, API key, or database is required in production. Fonts are self-hosted under `public/fonts` alongside their OFL licenses, sourced from the pinned Fontsource packages.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Content
 
-## Running end-to-end tests
+- `src/app/content/portfolio-content.ts`: typed Portuguese and English copy, employment, projects, and public contact URLs.
+- `src/app/portfolio-utils.ts`: experience calculation and recognized section hashes.
+- `src/styles.scss`: layout, typography, tokens, and responsive rules.
+- `public/images`: original decorative project illustrations (not screenshots), plus the social card.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Experience is calculated from **October 2011**, using completed calendar years and the UTC month. No precise start day was supplied. The static build supplies a readable initial value; TransferState preserves hydration consistency, then the browser recalculates on opening, returning to the tab, and hourly. Visitors without JavaScript see the build-time count and the permanent start date.
 
-## Further help
+Both languages must keep matching translation keys. Roles and date ranges are localized display content; company names and technology names remain proper nouns. The Streetwire responsibilities summarize work on portals/APIs, integrations, access control, geographic visualizations, SQL, and Python reports. No private report data, internal links, or business metrics are published.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Publication
+
+**Preview approval is required before publishing this redesign.** Development and builds do not deploy. There is no automatic production workflow on this feature branch.
+
+The existing GitHub Pages configuration publishes the root of `gh-pages`, with `marceloqueiroz.dev.br` as its custom domain. After approval, validate the build and run `npm run deploy` from the repository. This explicit command replaces the published artifact through `angular-cli-ghpages`; do not run it as part of tests or preview.
+
+See [deployment and recovery](docs/redesign/deployment.md), [implementation tasks](docs/redesign/tasks.md), and [validation evidence](docs/redesign/validation.md).

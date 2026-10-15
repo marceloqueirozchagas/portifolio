@@ -1,0 +1,87 @@
+<a class="skip-link" [href]="basePath + '#content'">{{ copy.skip }}</a>
+<div class="site-shell" id="home">
+  <header class="topbar">
+    <a class="monogram" [href]="basePath + '#home'" aria-label="mq. — Marcelo Queiroz"
+      >mq<span>.</span></a
+    >
+    <app-language-switcher [locale]="locale" [label]="copy.languageLabel" [hash]="currentHash()" />
+  </header>
+  <div class="layout">
+    <aside class="introduction">
+      <p class="eyebrow">{{ copy.eyebrow }}</p>
+      <h1>Marcelo<br />Queiroz<span>.</span></h1>
+      <p class="role">{{ copy.role }}</p>
+      <p class="statement">{{ copy.statement }}</p>
+      <p class="location"><span aria-hidden="true">⌖</span> {{ copy.location }}</p>
+      <nav class="section-navigation" [attr.aria-label]="copy.sectionsLabel">
+        @for (section of sections; track section) {
+          <a
+            [href]="basePath + '#' + section"
+            [attr.aria-current]="activeSection() === section ? 'location' : null"
+            ><span aria-hidden="true"></span>{{ copy.navigation[section] }}</a
+          >
+        }
+      </nav>
+      <div class="social-links">
+        <a [href]="profile.github"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+            /></svg
+          >GitHub <span aria-hidden="true">↗</span></a
+        >
+        <a [href]="profile.linkedin"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3 9h4v12H3zm6 0h4v1.7c.6-1.1 1.8-2 3.7-2 4 0 4.3 2.5 4.3 5.7V21h-4v-5.9c0-1.4 0-3.2-2-3.2s-2 1.5-2 3.1v6H9Z"
+            /></svg
+          >LinkedIn <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </aside>
+    <main id="content" tabindex="-1">
+      <section id="about" aria-labelledby="about-title">
+        <h2 class="section-heading" id="about-title"><span>01</span>{{ copy.navigation.about }}</h2>
+        <p class="lead">{{ copy.lead }}</p>
+        <p>
+          {{ copy.aboutBefore }}<span data-testid="experience-years">{{ years() }}</span
+          >{{ copy.aboutAfter }}
+        </p>
+        <p>{{ copy.aboutSecond }}</p>
+        <p class="since">{{ copy.since }}</p>
+      </section>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 class="section-heading" id="projects-title">
+          <span>02</span>{{ copy.navigation.projects }}
+        </h2>
+        <app-project-list [copy]="copy.projects" [unavailableLabel]="copy.unavailableProject" />
+        <a class="text-link" [href]="profile.github + '?tab=repositories'"
+          >{{ copy.moreProjects }} <span aria-hidden="true">↗</span></a
+        >
+      </section>
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 class="section-heading" id="experience-title">
+          <span>03</span>{{ copy.navigation.experience }}
+        </h2>
+        <app-experience-list [copy]="copy.experiences" [earlierLabel]="copy.earlier" />
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="section-heading" id="contact-title">
+          <span>04</span>{{ copy.navigation.contact }}
+        </h2>
+        <h3>{{ copy.contactTitle }}</h3>
+        <p>{{ copy.contactDescription }}</p>
+        <a class="email-button" [href]="'mailto:' + profile.email"
+          >{{ copy.email }} <span aria-hidden="true">↗</span></a
+        >
+      </section>
+      <footer>
+        <span class="footer-mark">mq.</span>
+        <p>{{ copy.footer }}</p>
+        <a [href]="basePath + '#home'" [attr.aria-label]="copy.backToTop">↑</a>
+      </footer>
+    </main>
+  </div>
+</div>

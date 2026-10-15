@@ -1,0 +1,36 @@
+{
+  "pt": {
+    "lighthouseVersion": "13.5.0",
+    "fetchTime": "2026-10-15T20:39:13.001Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "1.7 s",
+      "largest-contentful-paint": "2.2 s",
+      "total-blocking-time": "70 ms",
+      "cumulative-layout-shift": "0"
+    }
+  },
+  "en": {
+    "lighthouseVersion": "13.5.0",
+    "fetchTime": "2026-10-15T20:40:34.790Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "scores": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "1.7 s",
+      "largest-contentful-paint": "2.2 s",
+      "total-blocking-time": "60 ms",
+      "cumulative-layout-shift": "0"
+    }
+  }
+}
