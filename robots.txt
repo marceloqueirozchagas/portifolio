@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://marceloqueiroz.dev.br/sitemap.xml
